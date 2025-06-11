@@ -1,0 +1,68 @@
+iSolve-Lab-Website/
+├── config/                  # Django config
+│   ├── __init__.py
+│   ├── settings.py
+│   ├── urls.py
+│   └── wsgi.py
+│
+├── core/                    # Main app
+│   ├── migrations/
+│   ├── templates/
+│   │   └── core/
+│   │       ├── home.html    # Hero section + animations
+│   │       ├── clients.html # Client showcase
+│   │       └── team.html    # Team page
+│   ├── admin.py
+│   ├── apps.py
+│   ├── models.py            # Clients, Team models
+│   ├── tests.py
+│   └── views.py
+│
+├── projects/                # Portfolio app
+│   ├── migrations/
+│   ├── templates/
+│   │   └── projects/
+│   │       ├── list.html    # Filterable projects
+│   │       ├── detail.html  # Case studies
+│   │       └── ongoing.html # Ongoing projects
+│   ├── admin.py
+│   ├── apps.py
+│   ├── models.py            # Projects, Technologies
+│   ├── tests.py
+│   └── views.py
+│
+├── services/                # Services app
+│   ├── migrations/
+│   ├── templates/
+│   │   └── services/
+│   │       ├── list.html    # All services
+│   │       └── detail.html  # Service details
+│   ├── admin.py
+│   ├── apps.py
+│   ├── models.py
+│   ├── tests.py
+│   └── views.py
+│
+├── static/                  # Static files
+│   ├── css/
+│   │   ├── styles.css       # Main styles
+│   │   └── animations.css   # Particle.js etc.
+│   ├── js/
+│   │   ├── main.js          # Common scripts
+│   │   ├── carousel.js      # Client logo slider
+│   │   └── filters.js       # Project filtering
+│   └── img/
+│       ├── clients/         # Client logos
+│       ├── projects/        # Project images
+│       └── team/            # Team photos
+│
+├── templates/               # Base templates
+│   ├── base.html            # Main template
+│   └── includes/
+│       ├── head.html        # Meta tags
+│       ├── navbar.html      # Navigation
+│       └── footer.html      # Footer
+│
+├── media/                   # Uploaded files
+├── manage.py
+└── requirements.txt
